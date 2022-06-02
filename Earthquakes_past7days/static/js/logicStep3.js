@@ -26,7 +26,7 @@ let map = L.map('mapid', {
   center: [39.5, -98.5],
   zoom: 3,
   layers: [streets]
-})
+});
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
@@ -92,7 +92,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
     // We create a popup for each circleMarker to display the magnitude and
     //  location of the earthquake after the marker has been created and styled.
-    onEachFeature: function (feature, layer) {
+    onEachFeature: function(feature, layer) {
       layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
     }
 
