@@ -26,13 +26,13 @@ let map = L.map('mapid', {
   center: [39.5, -98.5],
   zoom: 3,
   layers: [streets]
-})
+});
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
 // Retrieve the earthquake GeoJSON data.
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function (data) {
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
   // This function returns the style data for each of the earthquakes we plot on
   // the map. We pass the magnitude of the earthquake into a function
   // to calculate the radius.
@@ -42,7 +42,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       fillOpacity: 1,
       fillColor: "#ffae42",
       color: "#000000",
-      radius: getRadius(),
+      radius: getRadius(feature.properties.mag),
       stroke: true,
       weight: 0.5
     };
@@ -62,7 +62,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
     // We turn each feature into a circleMarker on the map.
 
-    pointToLayer: function (feature, latlng) {
+    pointToLayer: function(feature, latlng) {
       console.log(data);
       return L.circleMarker(latlng);
     },
