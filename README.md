@@ -1,6 +1,6 @@
 # Mapping_Earthquakes
 
-The purpose of this project was to create maps for earthquakes from the past 7 days. An option to view the map in 'Street' or 'Satellite' mode was added. This was followed by adding tectonic plates outlines to the map, major earthquakes greater than a magnitude of 4.5, and a third map with a dark styling to it. 
+The purpose of this project was to create maps for earthquakes. An option to view the map in 'Street' or 'Satellite' mode was added. This was followed by adding tectonic plates outlines to the map, major earthquakes greater than a magnitude of 4.5, and a third map with a dark styling to it. 
 
 The maps shown below are with tectonic plates outlines added, major earthquakes added, and a dark styling added, respectively:
 
