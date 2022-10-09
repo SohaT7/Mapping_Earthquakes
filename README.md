@@ -30,7 +30,7 @@ The following three GeoJSON files have been used in this project:
  - Mapbox API
 
 ### Description:
-The code for this project can be found in the [index.html file]() and the [folder named static]().
+The code for this project can be found in the [index.html file](https://github.com/SohaT7/Mapping_Earthquakes/blob/main/index.html) and the [folder named 'static'](https://github.com/SohaT7/Mapping_Earthquakes/tree/main/static).
 
 JavaScript and the Data-Driven Documents (D3) library is used to traverse and extract GeoJSON earthquake data and tectonic plate data.  This data is then used to populate a geographical world map, using the Leaflet.js Application Programming Interface (API). 
 
