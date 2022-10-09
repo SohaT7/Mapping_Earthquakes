@@ -14,7 +14,7 @@
 This project aims to create an interactive world map for earthquakes. Multiple layers added to the map allow the user to select what mode (street, satellite, or dark) to view the map in, and which attributes (earthquakes, major earthquakes, and/or tectonic plates) to show on the map.
 
 ### About the Dataset:
-This project makes use of GeoJSON data files off of the [USGS (United States Geological Survey) website](https://www.usgs.gov). A GeoJSON file specifically holds geographical data. It represents geographical features (eg: the location of the earthquake) and non-spatial attributes (eg: the magnitude of the earthquake). 
+This project makes use of GeoJSON data files off of the [USGS (United States Geological Survey) website](https://www.usgs.gov/programs/earthquake-hazards/earthquakes). A GeoJSON file specifically holds geographical data. It represents geographical features (eg: the location of the earthquake) and non-spatial attributes (eg: the magnitude of the earthquake). 
 
 The following three GeoJSON files have been used in this project:
  - [Earthquakes GeoJSON file](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson)
@@ -35,6 +35,8 @@ The code for this project can be found in the [index.html file]() and the [folde
 JavaScript and the Data-Driven Documents (D3) library is used to traverse and extract GeoJSON earthquake data and tectonic plate data.  This data is then used to populate a geographical world map, using the Leaflet.js Application Programming Interface (API). 
 
 Each earthquake is represented on the map by a circle of varying size and color. The greater the magnitude of the earthquake, the larger the circle marker and the darker its color (as is shown in the legend on the map as well). Each earthquake circle marker can also be clicked to view its popup marker, which shows the location and magnitude of the earthquake. 
+
+![Popup Marker](https://github.com/SohaT7/Mapping_Earthquakes/blob/main/Earthquake_Challenge/Images/i_popupMarker.png)
 
 Leaflet library and Mapbox API add user interface controls to the map, which add multiple layers to the map. The layers added in help view:
  - Earthquakes 
